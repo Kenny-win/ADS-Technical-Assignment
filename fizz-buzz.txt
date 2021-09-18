@@ -1,0 +1,14 @@
+BEGIN
+    INPUT "n" as 20
+    STORE "m" with 1
+
+    WHILE "m" lesser than "n"
+           IF "m" mod by 3 IS 0 THEN
+               DISPLAY "Fizz"
+           IF ELSE "m" mod by 5 IS 0 THEN
+               DISPLAY "Buzz"
+           IF ELSE "m" mod 3 IS 0 and m mod by 5 IS 0 THEN
+               DISPLAY "FizzBuzz"
+           ELSE DISPLAY "m"
+           ADD "m" by 1
+END

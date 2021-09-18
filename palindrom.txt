@@ -1,0 +1,11 @@
+BEGIN
+
+    INPUT "word"
+    GET "tempWord" value from "word"
+    REVERSE "tempWord"
+    IF "word" same as "tempWord"
+        THEN TRUE
+    ELSE FALSE
+
+END
+
