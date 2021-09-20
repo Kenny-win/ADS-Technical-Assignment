@@ -1,10 +1,8 @@
 
-BEGIN    
-INPUT "score"    
-IF "score" < 68 or (("score" mod by 10 >= 0 and "score" mod by 10 < 3) or ("score mod by 10 >= 5 and "score" mod by 10 < 8)) 
-THEN    DISPLAY "score"    
-ELSE IF "score" more than 68 
-THEN "score" added by (5 minus by ("score" mod by 5)) 
-	DISPLAY "score"       
+BEGIN
+  INPUT integer as "grade"
+  IF "grade" mod by 5 IS more than 2 and more than equal 68 THEN
+    DISPLAY "grade" - ("grade" mod by 5) + 5
+  ELSE DISPLAY "grade"
 END
 
